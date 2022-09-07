@@ -8,7 +8,7 @@ class HttpService {
   final String apiKey = 'e486208b613a8a2d9e1ced26d2e32392';
   final String baseUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=';
 
-  Future<List?> getPopulasMovies() async {
+  Future<List?> getPopularMovies() async {
     final String uri = baseUrl + apiKey;
 
     http.Response result = await http.get(Uri.parse(uri));
